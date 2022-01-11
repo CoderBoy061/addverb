@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
-}
+@media only screen and (min-width: 1023px) {
+  .cards_component {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    margin-left: 8vw;
+    margin-right: 5vw;
+    row-gap: 1.5vw;
+    margin-top: 2vh;
+  }
+  .paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .paginationBttns a {
+    padding: 1.3vh 1vw;
+    margin: 8px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+    color: #2b2eff;
+    cursor: pointer;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .paginationBttns a:hover {
+    color: black;
+  }
+
+  .paginationActive a {
+    color: white;
+    background-color: rgb(103, 103, 224);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  }
+
+  .paginationDisabled a {
+    color: black;
+    background-color: white;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  }
+  .search {
+    width: 40vw;
+    padding: 0.8vh 1.5vw;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: black;
+    margin-left: 33vw;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+  }
+ 
+  .paginate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5.5vh;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 1023px) {
+  .search {
+    width: 80vw;
+    padding: 0.8vh 3.5vw;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: black;
+    margin-left: 8vw;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
   }
-  to {
-    transform: rotate(360deg);
+  .paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .paginationBttns a {
+    padding: 1.3vh 3vw;
+    margin: 8px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+    color: #2b2eff;
+    cursor: pointer;
+  }
+  .paginationBttns a:hover {
+    color: black;
+  }
+
+  .paginationActive a {
+    color: white;
+    background-color: rgb(103, 103, 224);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  }
+
+  .paginationDisabled a {
+    color: black;
+    background-color: white;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .cards_component {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+  .paginate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
   }
 }
